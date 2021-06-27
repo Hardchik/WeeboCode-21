@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.navbar {
+    background-color: #101820;
+}
+
+.trapezoid {
+	border-top: 50px solid #555;
+	border-left: 0px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 100px;
+}
+
+.sign-in {
+    position: relative;
+}
+
+.sign-in-bttn {
+    position: fixed;
+    right: 7px;
+    z-index: 5;
+    bottom: 7px;
+}
+
+.logo-image {
+    height: 8rem;
+    width: 8rem;
+    margin: auto;
+}
+
+.logo-image img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(50%)
+}
+
+.logo-image img:hover {
+    filter: grayscale(0)
+
+}
+
+.brdr {
+    border: dashed 25px rgb(122, 7, 7);
+}
+
+.heading_2:hover {
+    text-decoration: underline;
+    transition-delay: 10ms;
+    transition: ease-in-out;
+}
+
+.rotate-box {
+    width: 20px;
+    height: 20px;
+    background-color: #FFC107;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+     /* transform: rotate(0.3rad);/ */
+     /* transform: rotate(3grad); */ 
+     /* transform: rotate(.03turn);  */
+}
+  
+@keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+}
+
+#backg {
+    height: 72vh;
+   
+    background-image: url(../images/wallpaper.jpg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* padding-top: 1.2rem; */
+}
+
+/* .sec2 {
+    z-index: 2;
+}  */
+
+#cod-bckg {
+    height: 75vh;
+   
+    background-image: url(../images/COD/backg-img.jpg\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* padding-top: 1.2rem; */
+    position: relative;
+}
+
+.carousel-item a img {
+    filter: grayscale(70%);
+}
+
+.carousel-item a img:hover {
+    transition: ease-in-out;
+    transition-delay: 10ms;
+    filter: grayscale(0);
+}
+
+.partners div {
+    height: 4rem;
+}
+
+.partners div img {
+    width: 7rem;
+    filter: opacity(75%);
+}
+
+.partners div img:hover {
+    width: 8rem;
+    filter: opacity(100%);
+}
+
+.buttn-twitter {
+    background-color: #1B2D4A;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    padding-left: 0.8em;
+    padding-top: 0.45em;
+}
+
+.buttn-twitter:hover{
+
+    background-color: #1DA1F2;
+}
+
+.buttn-youtube {
+    background-color: #1B2D4A;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    padding-left: 0.7em;
+    padding-top: 0.45em;
+}
+
+.buttn-youtube:hover{
+
+    background-color: #F70000;
+}
+
+.buttn-discord {
+    background-color: #1B2D4A;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    padding-left: 0.84em;
+    padding-top: 0.45em;
+}
+
+.buttn-discord:hover{
+
+    background-color: #6E85D2;
+}
+
+.buttn-instagram {
+    background-color: #1B2D4A;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    padding-left: 0.85em;
+    padding-top: 0.45em;
+}
+
+.buttn-instagram:hover{
+
+    background-color: #8540A5;
+}
+
+.buttn-fb {
+    background-color: #1B2D4A;
+    border-radius: 60px;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.35em;
+    padding-left: 0.82em;
+    padding-top: 0.45em;
+}
+
+.buttn-fb:hover{
+
+    background-color: #1773EA;
+}
+
+.privacy a{
+    text-decoration: none;
+    color: #6b705c;
+}
+
+@media screen and (max-width: 991px) {  
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        right: 0;
+        background-color: #101820FF;
+        opacity: 0.85;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #0D6EFD;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidebar a:hover {
+        color: #0a4bac;
+    }
+    
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .btttn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #101820FF;
+    padding: 10px 15px;
+    border: none;
+    }
+
+    .btttn:hover {
+        background-color: rgb(11, 16, 20);
+    }  
+
+    #side_nav_bar {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+    
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+    }
+}
