@@ -42,4 +42,4 @@ For <strong>smaller width</strong> the output is shown below:
 <br>
 Additionally a sticky-type user button has been provided in the bottom-right corner, which upon click will pop up a form to get a new person registered to the community.
 <br><br>
-<center><strong>------------------------------------------------------------------ THE END ------------------------------------------------------------------------</strong></center>
+<center><strong>------------------------------------------------------------ THE END --------------------------------------------------------------------</strong></center>
